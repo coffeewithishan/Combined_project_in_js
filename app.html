@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="./app.css">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="word">
+            <input type="text" class="input" placeholder="Search your words here...">
+            <button class="search">search</button>
+        </div>
+        <div class="word-audio-wrapper">
+            <h3>main word</h3>
+            <button class="audio-btn">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p>pos</p>
+            <p>/sample/</p>
+        </div>
+        <p class="defination">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, exercitationem?
+        </p>
+        <p class="example">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, iusto!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, iusto!
+        </p>
+    </div>
+    <div class="clock-wrapper" >
+        <!-- clock will be added with js -->
+         <h3 class="clockText">This is a clock</h3>
+    </div>
+    <div class="date-wrapper">
+        <h3 class="dateData">This is date</h3>
+    </div>
+    <div class="weather-weapper">
+        <div class="user">
+            <input type="text" placeholder="Location..">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+        <div class="weather">
+            <div class="weather-type-wrapper forWeather">
+                <i class="fa-solid fa-rotate"></i>
+                <h4>Weather Type</h4>
+            </div>
+            <div class="location-wrapper forWeather">
+                <i class="fa-solid fa-earth-europe"></i>
+                <p>Location</p>
+            </div>
+            <div class="temp forWeather">
+                <i class="fa-solid fa-temperature-half"></i>
+                <p>Temp</p>
+            </div>
+        </div>
+
+        
+        <div class="todo-wrapper">  
+            <h3 class="todoMsg">Welcome, make your day productive!</h3>
+            <div class="user-wrapper">
+                <input type="text" placeholder="Write here..." class="todoInput">
+                <button class="addTask">Add</button>
+            </div>
+            <div class="task-wrapper">
+                <button class="clearAll">Clear All</button>
+                <ul class="tasks">
+                    <!-- <li>Task1 Lorem ipsum dolor sit amet.</li>
+                    <li>Task2 Lorem ipsum dolor sit amet.</li>
+                    <li>Task3 Lorem ipsum dolor sit amet.</li> -->
+                    
+                </ul>
+            </div>
+            <div class="popup-wrapper">
+                <div class="popup-content">
+                    <h2>Are you sure,  you want to delete all task?</h2>
+                    <div class="buttonWrapper">
+                    <button class="confirlDel popupBtn">Confirm</button>
+                    <button class="cancel popupBtn">Cancel</button>
+                </div>
+                    <!-- since we created this we have to add some styles -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
